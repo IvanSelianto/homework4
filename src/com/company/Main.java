@@ -55,27 +55,6 @@ public class Main {
         System.out.println(picture.mapOfFigures());
 
 
-        NavalBattle ships = new NavalBattle();
-
-        ships.createField();
-
-        ships.putTetraDeck();
-
-        ships.putTripleDeck();
-        ships.putTripleDeck();
-
-        ships.putDoubleDeck();
-        ships.putDoubleDeck();
-        ships.putDoubleDeck();
-
-        ships.putSingleDeck();
-        ships.putSingleDeck();
-        ships.putSingleDeck();
-        ships.putSingleDeck();
-
-        ships.printField();
-
-
         Mathematics mathematics = new Mathematics();
         int[] firstArray = new int[]{1, 2, 3, 4};
         int[] secondArray = new int[]{5, 6, 7, 8};
@@ -98,6 +77,46 @@ public class Main {
         map2.put(3, "Виталя");
 
         System.out.println(mathematics.add(map1, map2));
+
+        System.out.println(circle.toString());
+        circle.name();
+
+
+        NavalBattle ships = new NavalBattle();
+
+        ships.createField();
+        ships.printField();
+        System.out.println("   ");
+        ships.putTetraDeck();
+        ships.printField();
+        System.out.println("         ");
+        ships.putTripleDeck();
+        ships.putTripleDeck();
+
+        ships.printField();
+        System.out.println("         ");
+        ships.putDoubleDeck();
+        ships.putDoubleDeck();
+        ships.putDoubleDeck();
+
+        ships.printField();
+        System.out.println("         ");
+
+        ships.putSingleDeck();
+        ships.putSingleDeck();
+        ships.putSingleDeck();
+        ships.putSingleDeck();
+
+        ships.printField();
+        System.out.println("         ");
+        System.out.println(ships.howMuch1());
+
+
+
+
+
+        
+
 
 
     }

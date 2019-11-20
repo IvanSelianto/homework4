@@ -22,8 +22,10 @@ public class Circle extends Figure {
 
 
     public String toString() {
-        String s = "Name: %s; Radius = %f", name, radius;
-        return s;
+
+
+        return String.format("Name: %s; Radius = %f", name, radius);
+
     }
 
 

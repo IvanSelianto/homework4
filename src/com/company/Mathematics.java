@@ -1,9 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Mathematics {
 
@@ -37,16 +34,12 @@ public class Mathematics {
 
     public int[] add(int[] firstArray, int[] secondArray) {
 
+
         int[] resultArray = new int[firstArray.length + secondArray.length];
-        for (int i = 0; i < firstArray.length; i++) {
-            resultArray[i] = firstArray[i];
+        System.arraycopy(firstArray, 0, resultArray,0, firstArray.length);
+        System.arraycopy(secondArray,0, resultArray, firstArray.length, secondArray.length);
 
 
-        }
-        for (int j = 0, i = firstArray.length; i < resultArray.length; i++, j++) {
-            resultArray[i] = secondArray[j];
-
-        }
         return resultArray;
 
     }

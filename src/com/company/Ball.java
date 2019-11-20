@@ -2,13 +2,14 @@ package com.company;
 
 public class Ball extends Figure {
     private double radius;
-    private String name ="Ball";
+    private String name = "Ball";
 
     public Ball(double radius) {
         this.radius = radius;
 
 
     }
+
     public String setName(String name) {
         this.name = name;
         return name;
@@ -20,10 +21,9 @@ public class Ball extends Figure {
     }
 
 
-
     public String toString() {
-        String s = "Name: %s; Radius = %f", name, radius;
-        return s;
+
+        return String.format("Name: %s; Radius = %f", name, radius);
     }
 
 
@@ -33,8 +33,8 @@ public class Ball extends Figure {
 
     public void name() {
         System.out.println(name);
-
     }
+
 
     public double perimeter() {
         return Double.POSITIVE_INFINITY;
@@ -42,7 +42,7 @@ public class Ball extends Figure {
 
 
     public double area() {
-        return 4* Math.PI * Math.pow(radius, 2);
+        return 4 * Math.PI * Math.pow(radius, 2);
     }
 
 }

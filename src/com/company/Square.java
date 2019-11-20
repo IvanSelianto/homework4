@@ -32,8 +32,7 @@ public class Square extends Figure {
 
 
     public String toString() {
-        String s = "Name: %s; Side of square= %f", name, side;
-        return s;
+        return String.format("Name: %s; Side of square= %f", name, side);
     }
 
     public void speak() {

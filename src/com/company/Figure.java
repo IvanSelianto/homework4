@@ -14,10 +14,7 @@ public abstract class Figure {
 
     }
 
-    public String toString() {
-
-        return "";
-    }
+    public abstract String toString();
 
     public abstract void speak();
 

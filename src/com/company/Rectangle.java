@@ -36,8 +36,7 @@ public class Rectangle extends Figure {
     }
 
     public String toString() {
-        String s = "Name: %s; Length= %f; Width= %f %n", name, length, width ;
-        return s;
+        return String.format("Name: %s; Length= %f; Width= %f %n", name, length, width);
     }
 
 
